@@ -15,7 +15,7 @@ public class VehicleDataTest {
 
     @BeforeEach
     public void setUp() {
-        // Defina o caminho para o driver do Chrome
+        //caminho para o driver do Chrome
          System.setProperty("webdriver.chrome.driver", "src/test/chromedriver-win64/chromedriver.exe");
          driver = new ChromeDriver();
          driver.get("http://sampleapp.tricentis.com/101/app.php");
