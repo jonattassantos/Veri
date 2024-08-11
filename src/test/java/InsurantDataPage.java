@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class InsurantDataPage {
     private WebDriver driver;
 
-    // Adicione os localizadores e métodos para preencher os dados da aba "Enter Insurant Data"
+    // localizadores e métodos para preencher os dados da aba 
     private By firstName = By.id("firstname");
     private By lastName = By.id("lastname");
     private By dateOfBirth = By.id("birthdate");
