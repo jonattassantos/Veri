@@ -34,7 +34,7 @@ public class VehicleDataTest {
         vehicleDataPage.clickNext();
 
         // Validação 1: Verificar se o título da página está correto após o envio dos dados do veículo
-        String expectedTitle = "Insurance Data"; // Substitua com o título esperado da página de dados do segurado
+        String expectedTitle = "Enter   Vehicle Data";
         String actualTitle = driver.getTitle();
         assertTrue(actualTitle.contains(expectedTitle), "O título da página não corresponde ao esperado.");
 
@@ -42,7 +42,7 @@ public class VehicleDataTest {
         insurantDataPage.clickNext();
 
         // Validação 2: Verificar se um elemento específico na página de dados do segurado está presente
-        WebElement confirmationElement = driver.findElement(By.id("confirmationMessage")); // Substitua com o ID real do elemento
+        WebElement confirmationElement = driver.findElement(By.id("firstname"));
         assertTrue(confirmationElement.isDisplayed(), "O elemento de confirmação não está visível.");
     }
 
